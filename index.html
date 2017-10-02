@@ -1,0 +1,48 @@
+// Basics I:
+var x = [];
+x.push('coding','dojo','rocks');
+console.log(x); // output: [ 'coding', 'dojo', 'rocks' ]
+
+x.pop();
+console.log(x); // output: [ 'coding', 'dojo' ]
+
+//Basics II:
+const y = []
+console.log(y) // output: []
+
+y.push(88)
+console.log(y) // output: [88]
+
+//Basics III:
+var z = [9, 10, 6, 5, -1, 20, 13, 2];
+for (var i = 0; i < z.length; i++){
+    console.log(z[i]); // output: 9, 10, 6, 5, -1, 20, 13, 2
+}                 
+
+
+var z = [9, 10, 6, 5, -1, 20, 13, 2];
+for (var i = 0; i < z.length - 1; i++) { // outputs: 9, 10, 6, 5, -1, 20, 13
+    console.log(z[i]);
+}
+//Basics IV:
+var names = ['Kadie', 'Joe', 'Fritz', 'Pierre', 'Alphonso'];
+for (var i = 0; i < names.length; i++) {
+    console.log(names[i]); // outputs: Kadie, Joe, Fritz, Pierre, Alphonso
+}
+console.log(names.length); // outputs: 5
+
+// Basics V:
+function yell(string){
+    return string;
+}
+let n = yell('STRING')
+console.log(n) // outputs: STRING
+//More about uppercasing strings in javaScript can be found at the mozilla divelopers documentation
+
+function toUpper(string) {
+    var str = 'string';
+    var upper = str.toUpperCase();
+    return upper;
+}
+let m = toUpper('smile');
+console.log(m);  // outputs: STRING
